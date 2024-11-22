@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios Horizontales</title>
+    <style>
+        /* Estilos generales para los formularios */
+        .formulario-container {
+            display: flex; /* Utilizamos flexbox para alinearlos horizontalmente */
+            justify-content: space-between; /* Para que los formularios tengan espacio entre ellos */
+            gap: 20px; /* Espacio entre los formularios */
+        }
+
+        .formulario {
+            width: 45%; /* Ajusta el tamaño de cada formulario */
+            padding: 25px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .form_container {
+    background-color: #f7ab88;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin: center ;
+    gap: .5em;
+    grid-auto-columns: 90%;   
+    outline: salmon;
+    border: 1px solid #bb0b0b;
+    border: 0.5em ; 
+    border-radius: 2em;
+  }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            width: auto;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="formulario-container">
+        <!-- Primer formulario -->
+        <form class="formulario">
+            <h2>Formulario 1</h2>
+            <form action="https://formspree.io/f/xovqlwpa" method="POST" >
+                <center> <label for="name" >Nombre:</label></center>
+                 <input type="text" id="name" name="name"  placeholder="Tu nombre" class="form_input2"required>
+         
+                 <center><label for="email">Correo electrónico:</label></center>
+                 <input type="email" id="email" name="email" placeholder="Tu correo electronico"class="form_input2" required>
+         
+                    <center><label for="email">Numero de contacto:</label></center>
+                 <input type="number" id="movil" name="movil" placeholder="Tu telefono"class="form_input2"required>
+         
+                   <center><label for="message">Mensaje:</label></center>
+                 <textarea id="message" name="message" rows="4" placeholder="Tu mensaje" class="form_input--message"required></textarea>
+         
+                 <center><input type="submit" value="Enviar" class="form_cta"></center> </form>               
+               </form> 
+
+        <!-- Segundo formulario -->
+        <form class="formulario">
+            <h2>Formulario 2</h2>
+            <form action="https://formspree.io/f/xovqlwpa" method="POST" >
+                <a aria-label="Chat on WhatsApp" href="https://wa.me/3208403762"></a><img alt="Chat on WhatsApp" src="imagenes\chateaConNosotros-removebg-preview.png" 
+                width="350" height="350" align="right" />
+        </form>
+    </div>
+
+</body>
+</html>
